@@ -33,6 +33,51 @@ Go to the project directory
   cd specflow-selenium-search
 ```
 
+# Build
+
+## Using IDE
+
+Click in the `Build` button
+
+## Using CLI
+
+Open terminal and execute the following commands:
+
+```bash
+# run in SpecFlowCalculator directory
+dotnet build
+```
+
+# Test
+
+## Using IDE
+
+Click in `Run all tests` button
+
+## Using CLI
+
+Open terminal and execute the following commands:
+
+```bash
+# run in SpecflowSelenium directory
+dotnet test
+```
+
+## Generate test results
+
+> You need to have livingdoc installed in your computer
+
+Open terminal and execute the following commands:
+
+```bash
+# run in SpecflowSelenium directory
+livingdoc test-assembly SpecflowSelenium/bin/Debug/net6.0/SpecflowSelenium.dll -t SpecflowSelenium/bin/debug/net6.0/TestExecution.json
+```
+
+## See test results
+
+Open the `LivingDoc.html` that livingdoc created in the root of `SpecflowSelenium` directory.
+
 # License
 
 MIT
